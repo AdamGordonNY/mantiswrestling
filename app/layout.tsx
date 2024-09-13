@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import Header from "@/components/layout/Header";
 
 const oswald = localFont({
   src: "/fonts/Oswald-VariableFont_wght.ttf",
@@ -26,7 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${bebas.variable} antialiased`}>
+      <body
+        className={`${oswald.variable} ${bebas.variable} antialiased bg-dark_green-400 min-h-screen`}
+      >
+        {" "}
+        <Header />
         {children}
       </body>
     </html>
