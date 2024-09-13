@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+@layer utilities {
+  .display-1-bold {
+    @apply text-[32px] font-bold leading-[40px];
+  }
+  .display-2-bold {
+    @apply text-[24px] font-bold leading-[32px];
+  }
+
+  .heading-1-medium {
+    @apply text-[20px] font-medium leading-[28px];
+  }
+  .heading-2-medium {
+    @apply text-[16px] font-medium leading-[24px];
+  }
+
+  .paragraph-1-bold {
+    @apply text-[18px] font-bold leading-[28px];
+  }
+  .paragraph-2-bold {
+    @apply text-[16px] font-bold leading-[24px];
+  }
+  .paragraph-3-bold {
+    @apply text-[14px] font-bold leading-[20px];
+  }
+  .paragraph-4-bold {
+    @apply text-[12px] font-bold leading-[16px];
+  }
+
+  .paragraph-1-medium {
+    @apply text-[18px] font-medium leading-[28px];
+  }
+  .paragraph-2-medium {
+    @apply text-[16px] font-medium leading-[24px];
+  }
+  .paragraph-3-medium {
+    @apply text-[14px] font-medium leading-[20px];
+  }
+  .paragraph-4-medium {
+    @apply text-[12px] font-medium leading-[16px];
+  }
+  .subtitle-medium {
+    @apply text-[10px] font-medium leading-[14px];
+  }
+
+  .paragraph-1-regular {
+    @apply text-[18px] font-normal leading-[28px];
+  }
+  .paragraph-2-regular {
+    @apply text-[16px] font-normal leading-[24px];
+  }
+  .paragraph-3-regular {
+    @apply text-[14px] font-normal leading-[20px];
+  }
+  .paragraph-4-regular {
+    @apply text-[12px] font-normal leading-[16px];
+  }
+  .subtitle-regular {
+    @apply text-[10px] font-normal leading-[14px];
+  }
+
+  .caption-10 {
+    @apply text-[10px] font-normal leading-[13px];
+  }
+  .caption-8 {
+    @apply text-[8px] font-normal leading-[10px];
+  }
+}
