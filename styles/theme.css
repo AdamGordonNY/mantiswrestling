@@ -4,6 +4,9 @@
 
 /* Your custom styles here */
 @layer utilities {
+  .heading-1-regular {
+    @apply text-[72px] font-normal leading-[28px];
+  }
   .display-1-bold {
     @apply text-[32px] font-bold leading-[40px];
   }
