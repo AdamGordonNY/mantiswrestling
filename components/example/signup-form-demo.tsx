@@ -9,13 +9,7 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 
-import { ClassValue } from "class-variance-authority/types";
-import { twMerge } from "tailwind-merge";
-import { clsx } from "clsx";
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+import cn from "../ui";
 export default function SignupFormDemo() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -4,10 +4,11 @@ import {
   motion,
   useTransform,
   useScroll,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   useVelocity,
   useSpring,
 } from "framer-motion";
-import { cn } from "@/lib/utils";
+import cn from ".";
 
 export const TracingBeam = ({
   children,

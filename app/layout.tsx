@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Bebas_Neue, Oswald } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/layout/Header";
-
-const oswald = Oswald({
-  subsets: ["latin"],
-
-  weight: ["400", "500", "700"],
-});
 
 const bebLocal = localFont({
   src: "/fonts/BebasNeue-Regular.ttf",
@@ -37,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.className} ${bebLocal.variable} ${oswaldLocal.variable} antialiased bg-backgroundImage-mintdark-gradient min-h-screen min-w-full `}
+        className={` ${bebLocal.variable} ${oswaldLocal.variable} antialiased bg-backgroundImage-mintdark-gradient min-h-screen min-w-full `}
       >
         {" "}
         <Header />

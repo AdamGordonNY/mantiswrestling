@@ -1,12 +1,6 @@
 import * as React from "react";
 
-import { ClassValue } from "class-variance-authority/types";
-import { twMerge } from "tailwind-merge";
-import { clsx } from "clsx";
-
-export default function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+import cn from ".";
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}
 

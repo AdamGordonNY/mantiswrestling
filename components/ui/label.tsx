@@ -3,13 +3,7 @@
 import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { cva, type VariantProps } from "class-variance-authority";
-import { ClassValue } from "class-variance-authority/types";
-import { twMerge } from "tailwind-merge";
-import { clsx } from "clsx";
-
-export default function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+import cn from "./";
 const labelVariants = cva(
   "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 );
