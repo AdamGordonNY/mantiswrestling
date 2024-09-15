@@ -27,9 +27,18 @@ const config: Config = {
           "2xl": "1536px",
         },
       },
+      fontFamily: {
+        sans: ["Bebas Neue", "sans-serif"],
+        serif: ["Oswald", "serif"],
+      },
+
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        backgroundImage: {
+          "mintdark-gradient":
+            "linear-gradient(90deg, #10251b, #1f4b36, #2f7052, #3f966d, #52b788, #75c5a0, #97d4b8, #dcf1e7)", // Gradient based on your mintdark color shades
+        },
         nyanza: {
           "100": "#16461d",
           "200": "#2b8c3a",

@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "../styles/theme.css";
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,7 +13,20 @@
     --foreground: #ededed;
   }
 }
-
+/* Declare the Bebas Neue font */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Declare the Bebas Neue font */
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Global Reset */
 * {
   margin: 0;
@@ -174,7 +187,7 @@ body {
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border font-sans;
   }
   body {
     @apply bg-background text-foreground;

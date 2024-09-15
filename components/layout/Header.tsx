@@ -1,19 +1,23 @@
+"use client";
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";
 import MobileNavButton from "./MobileNavButton";
+import { useMediaQuery } from "usehooks-ts";
 const Header = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 600px)");
   return (
     <>
-      <header className="sticky flex h-20 items-center justify-between px-8 dark:bg-dark-800 mq450:w-full bg-mint-800 lg:hidden">
-        <Image
-          src="/images/mantisdark.svg"
-          alt="logo"
-          width={100}
-          height={100}
-        />
-        <MobileNavButton />
-      </header>
+      {isSmallScreen && (
+        <header className="sticky flex h-20 items-center justify-between px-8 bg-caledondark mq450:w-full bg-mint-800 lg:hidden">
+          <Image
+            src="/images/mantisdark.svg"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+          <MobileNavButton />
+        </header>
+      )}
     </>
   );
 };
