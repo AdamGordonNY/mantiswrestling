@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${bebLocal.variable} ${oswaldLocal.variable} antialiased bg-backgroundImage-mintdark-gradient min-h-screen min-w-full `}
+        className={` ${bebLocal.variable} ${oswaldLocal.variable} antialiased bg-gradient-to-tl from-mint-500 to-mint-100 min-h-screen min-w-full `}
       >
         {" "}
         <Header />

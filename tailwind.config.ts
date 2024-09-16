@@ -37,7 +37,7 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         backgroundImage: {
           "mintdark-gradient":
-            "linear-gradient(90deg, #10251b, #1f4b36, #2f7052, #3f966d, #52b788, #75c5a0, #97d4b8, #dcf1e7)", // Gradient based on your mintdark color shades
+            "linear-gradient(90deg, #10251b, #1f4b36, #2f7052, #3f966d, #52b788, #75c5a0, #97d4b8, #dcf1e7)",
         },
         nyanza: {
           "100": "#16461d",
