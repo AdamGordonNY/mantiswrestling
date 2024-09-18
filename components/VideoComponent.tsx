@@ -8,6 +8,8 @@ export async function VideoComponent() {
       className="aspect-video md:w-[80%] md:h-[60%] "
       controls={false}
       src={action}
+      autoPlay
+      loop
     />
   );
 }
