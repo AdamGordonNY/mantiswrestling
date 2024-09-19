@@ -5,4 +5,6 @@ const mux = new Mux({
   tokenSecret: process.env.MUX_TOKEN_SECRET,
 });
 
-await mux.video.assets.retrieve("bsTvTZbgcKn8gee43nYyBM5a6yIYNNaRgSp8n7DHIyk");
+await mux.video.assets.retrieve(
+  "KF5Yyu01bGs02i9YpuxhJYe5AACwh52IZEpSwjSKSLKc00"
+);
