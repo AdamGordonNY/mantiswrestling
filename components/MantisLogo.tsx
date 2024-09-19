@@ -3,7 +3,7 @@ import Image from "next/image";
 const MantisLogo = () => {
   return (
     <Image
-      src={`/images/mantisdark.svg`}
+      src={`/images/mantis_logo_2.svg`}
       width={400}
       height={600}
       alt="logo"
