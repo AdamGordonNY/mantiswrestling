@@ -1,22 +1,27 @@
 import { Suspense } from "react";
 import VideoComponent from "./VideoComponent";
-import MantisLogo from "./MantisLogo";
+import { programs } from "@/lib/data";
 
 const HeroSection = () => {
   return (
     <>
-      <h1 className="heading-1-regular --font-oswald mt-12 text-mint-500">
-        Mantis Sports
-      </h1>{" "}
-      <MantisLogo />
-      <h2 className="z-0">Mixed Martial Arts | Jiu Jitsu | Wrestling</h2>
+      <div className="z-0 flex">
+        {programs.map((program) => (
+          <h1
+            className="z-1 text-center text-mintdark-500 mx-2 my-2"
+            key={program}
+          >
+            {program === "|" ? <span className="mx-2">|</span> : program}
+          </h1>
+        ))}
+      </div>
       <div className="relative  flex justify-center items-center text-center overflow-hidden">
         <div className=""></div>
         <div className="relative z-2">
-          <h1>
+          <span className="text-2xl">
             Bringing competent wrestling programs to Wrestling/Jiu Jitsu/Martial
             Arts gyms in Colorado
-          </h1>
+          </span>
           <div className="uppercase py-[10px] px-5">
             {" "}
             <section className="mq450:hidden">

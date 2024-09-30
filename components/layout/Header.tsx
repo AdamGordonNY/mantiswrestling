@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import MobileNavButton from "./MobileNavButton";
 import { useMediaQuery } from "usehooks-ts";
+import MantisLogo from "../MantisLogo";
 const Header = () => {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   return (
@@ -17,7 +18,11 @@ const Header = () => {
           />
           <MobileNavButton />
         </header>
-      )}
+      )}{" "}
+      <header className="flex max-lg:hidden flex-col justify-center items-center align-top sticky  h-20 px-8 bg-transparent mb-20">
+        {" "}
+        <MantisLogo />
+      </header>
     </>
   );
 };

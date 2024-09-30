@@ -36,6 +36,12 @@
 
 html {
   font-size: 16px; /* Base font size */
+  @media (max-width: 450px) {
+    .custom-responsive-width {
+      min-width: 375px; /* Minimum width for screens smaller than 450px */
+      max-width: 100%; /* Max width set to full */
+    }
+  }
 }
 
 /* Heading Styles */
